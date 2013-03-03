@@ -2,7 +2,7 @@
 layout: post
 title: "数组和指针的差异"
 description: "c"
-category: tech
+category: language
 tags: [c]
 ---
 {% include JB/setup %}

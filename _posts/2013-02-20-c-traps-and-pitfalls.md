@@ -2,7 +2,7 @@
 layout: post
 title: "c traps and pitfalls 笔记"
 description: "笔记"
-category: tech
+category: language
 tags: [c]
 ---
 
