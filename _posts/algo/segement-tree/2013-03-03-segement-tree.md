@@ -191,10 +191,10 @@ tags: [algo, data structure]
 
 参考资料:
 
-*   Not Only Success: <http://www.notonlysuccess.com/index.php/segment-tree-complete/>   
-*   勇幸|Thinking: <http://www.ahathinking.com/archives/136.html>   
-*   线段树和树状数组(北大郭炜): <http://poj.org/summerschool/1_interval_tree.pdf>...
-*   线段树讲稿(杨戈): <http://download.csdn.net/detail/pandm/2255479>   
+*   Not Only Success: <http://www.notonlysuccess.com/index.php/segment-tree-complete/>
+*   勇幸|Thinking: <http://www.ahathinking.com/archives/136.html>
+*   线段树和树状数组(北大郭炜): <http://poj.org/summerschool/1_interval_tree.pdf>
+*   线段树讲稿(杨戈): <http://download.csdn.net/detail/pandm/2255479>
 <!--
 线段树上记录的信息应该是关于当前区间的信息. 这个应该总结一下的.
 
