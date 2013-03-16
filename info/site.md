@@ -2,6 +2,7 @@
 layout: page
 title: About me
 tagline: 汇聚娟娟细流
+group: navigation
 ---
 {% include JB/setup %}
 
