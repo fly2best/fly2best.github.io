@@ -7,10 +7,6 @@ tags: [c]
 ---
 {% include JB/setup %}
 
-
-数组和指针的差异
-----------------
-
 先在c trap and pitfalls中看到过这个问题，一者没整理.
 今天在看c 专家编程 和csapp 链接章节时，又遇到了这个问题。
 
@@ -19,13 +15,16 @@ tags: [c]
 两个文件
 
 foo.c
+
     #include <stdio.h>
     char buf[] = "abcd";
     void print_foo()
     {
         printf("foo:%p\n", buf);
     }
+
 bar.c
+
     #include <stdio.h>
     extern char *buf;
     int main(int argc, const char *argv[])
@@ -35,10 +34,14 @@ bar.c
         printf("bar:%p\n", &buf);
         return 0;
     }
+
 编译运行:
+
     gcc -o test  foo.c bar.c 
     ./test
+
 输出:
+
     foo:0x804a020
     bar:0x64636261
     bar:0x804a020

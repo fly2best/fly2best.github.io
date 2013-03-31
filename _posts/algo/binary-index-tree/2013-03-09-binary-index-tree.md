@@ -36,7 +36,7 @@ C[i] = a[i - lowbit[i] + 1] + .. + a[i]
 
 查询
 -------
-设sum(k) = a[1]+a[2]+...+a[k]   
+设sum(k) = a\[1\]+a\[2\]+...+a[k]   
 则 a[i] + a[i+1] + ... + a[j] = sum(j)-sum(i-1)
 
 sum(k) = C[n1]+C[n2] + ...+ C[nm]   
@@ -44,6 +44,7 @@ sum(k) = C[n1]+C[n2] + ...+ C[nm]
 因为ni-1 比ni少一个1, 而k最多有log2(k)个1, sum(k)最多log2 k项, 所以求和的时间复杂度就是O(log2(k))
 
 对应代码:
+
     int sum(int x)
     {
         int ret = 0;
@@ -69,9 +70,11 @@ nm + lowbit(nm) 必须大于 a 的元素个数 N
     6 + lowbit(6)
     = 110 + 10
     = 1000
+
 因此，修改的时间复杂度是O(log2(n))
 
 代码:
+
     void add(int x, int v)
     {
         while (x <= N) {
@@ -119,6 +122,7 @@ C[k] = sum(k) – sum(k-lowbit(k))
              B   C
             / \
            D   E
+
     前序遍历, A B D E C, 记下每颗子树的区间就行了.
     后序也行, 但是中序不行, 其子树区间不太容易获得.
 
@@ -144,6 +148,7 @@ C[k] = sum(k) – sum(k-lowbit(k))
                     ret += C[i][j];
             retrun ret;
         }
+
     不太好描述, 自己画个图看看就明白了.
 
     更新呢?(xi, yi)

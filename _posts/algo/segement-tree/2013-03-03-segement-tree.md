@@ -117,6 +117,7 @@ tags: [algo, data structure]
             lsum[rt] += lsum[rc];
         if (rsum[rc] == len / 2)
             rsum[rt] += rsum[lc];
+
     查询的话, 就好找了, 如果区间满足, 则先看左儿子是否满足, 再看左儿子和右儿子一起是否满足, 最后再看右儿子是否满足.
 
     我看到disscuss的一句话, 激起了我的联想.   
@@ -195,6 +196,7 @@ tags: [algo, data structure]
 *   勇幸|Thinking: <http://www.ahathinking.com/archives/136.html>
 *   线段树和树状数组(北大郭炜): <http://poj.org/summerschool/1_interval_tree.pdf>
 *   线段树讲稿(杨戈): <http://download.csdn.net/detail/pandm/2255479>
+
 <!--
 线段树上记录的信息应该是关于当前区间的信息. 这个应该总结一下的.
 
@@ -227,7 +229,6 @@ really?
 key point
 用线段树解题,关键是要想清楚每个节点要存哪些信息(当然区间起终点,以及左右子节点指针是必须的),以及这些信息如何高效更新,维护,查询。
 不要一更新就更新到叶子节点,那样更新效率最坏就可能变成O(n) 的了。
-
 -->
 
 [1]: http://acm.hdu.edu.cn/showproblem.php?pid=1166 "hdu 敌兵布阵 segement tree"

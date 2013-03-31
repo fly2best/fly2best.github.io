@@ -27,6 +27,7 @@ tags: [algo]
 想了想, 调了调，结果如下:
 
 问题1:
+{% highlight cpp %}
     // [0,n), 查找key
     int bin_search(int key,int *p, int n)
     {
@@ -50,11 +51,13 @@ tags: [algo]
         assert(l == r);
         return -1;
     }
+{% endhighlight%}
 
 问题2:
 
 先看代码:
 
+{% highlight cpp %}
     int bin_search_first(int key,int *p, int n)
     {
         if (p == NULL || n <= 0)
@@ -82,6 +85,7 @@ tags: [algo]
 
         return first;
     }
+{% endhighlight%}
 
 为什么呢?
 
