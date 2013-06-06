@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-tagline: 汇聚娟娟细流
+tagline: 汇聚涓涓细流
 group: navigation
 ---
 {% include JB/setup %}
